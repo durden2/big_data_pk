@@ -7,6 +7,7 @@
 \usepackage{amsmath}
 \usepackage{amsthm}
 
+\usepackage{booktabs}
 \usepackage{csquotes}
 % Ponieważ `csquotes` nie posiada polskiego stylu, można skorzystać z mocno zbliżonego stylu chorwackiego.
 \DeclareQuoteAlias{croatian}{polish}
@@ -96,6 +97,10 @@
 \printtitle					% Print the title data as defined above
   	\vfill
 \printauthor				% Print the author data as defined above
+
+\newpage
+\tableofcontents
+\newpage
 \section{Opis zbioru danych}
 
 Zbiór zawiera informacje czy u danego pacjenta występuje cukrzyca czy też nie. Pacjentami są kobiety w wieku 21 lat lub starszych pochodzących z Indii. Opis dokonany jest za pomocą zmiennych:
@@ -139,13 +144,66 @@ W projekcie porównane zostaną wyniki skuteczności różnych klasyfikatorów.
 
 \section{Analiza zbioru}
 
-Zanim przystąpimy do próby klasyfikacji dane muszą zostać odpowiednio przygotowane. Sprawdzone zostają wiersze w których qystępują zera oraz wartości odstające.
+Zanim przystąpimy do próby klasyfikacji dane muszą zostać odpowiednio przygotowane. Sprawdzone zostają wiersze w których występują zera oraz wartości odstające.
 
 \subsection{Wartości zerowe}
 
-Z medycznego punktu widzenia cechy w badanym zbiorze nie mogą być równe zeru, świadczy to więc o braku poprawnych danych. Wartości zerowe we wszystkich kolumnach zostają zastąpione przez średnią wartość w każdej z nich. 
+\begin{figure}
+	\centering
+	\includegraphics[width=1.2\textwidth]{images/hist_median.png}
+	\caption{Histogramy po zastąpieniu wartości 0 medianą}
+	\label{fig:outliers}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1.2\textwidth]{images/hist_average.png}
+	\caption{Histogramy po zastąpieniu wartości 0 średnią}
+	\label{fig:outliers}
+\end{figure}
+
+Z tabel wynika, że istnieją wartości zerowe w kolumnach \textit{Pregnancies, Glucose, BoloodPressuure, SkinThickness, Insulin, BMI}. Z medycznego punktu widzenia cechy w badanym zbiorze nie mogą być równe zeru, świadczy to o braku poprawności danych danych. W~przypadku pierwszej kolumny wartości zerowe są poprawne - jest to informacja, że dana kobieta nie była w~ciąży. W przypadku reszty obserwacji dane zostają zamienione na \textbf{średnią wartość} w kolumnie, \textbf{medianę} oraz zostają całkowicie \textbf{usunięte}. Oba trzy przypadki posłużą jako dane testowe.
+
+% Please add the following required packages to your document preamble:
+\begin{table}[]
+\begin{tabular}{@{}llllllllll@{}}
+\toprule
+               & \textbf{Pregnancies} & \textbf{Glucose} & \textbf{BloodPressure} & \textbf{SkinThickness} & \textbf{Insulin} &  &  &  &  \\ \midrule
+\textbf{count} & 768                  & 768              & 768                    & 768                    & 768              &  &  &  &  \\
+\textbf{mean}  & 3.845052             & 120.8945         & 69.10547               & 20.53646               & 79.79948         &  &  &  &  \\
+\textbf{std}   & 3.369578             & 31.97262         & 19.35581               & 15.95222               & 115.244          &  &  &  &  \\
+\textbf{min}   & 0                    & 0                & 0                      & 0                      & 0                &  &  &  &  \\
+\textbf{25\%}  & 1                    & 99               & 62                     & 0                      & 0                &  &  &  &  \\
+\textbf{50\%}  & 3                    & 117              & 72                     & 23                     & 30.5             &  &  &  &  \\
+\textbf{75\%}  & 6                    & 140.25           & 80                     & 32                     & 127.25           &  &  &  &  \\
+\textbf{max}   & 17                   & 199              & 122                    & 99                     & 846              &  &  &  &  \\ \bottomrule
+\end{tabular}
+\end{table}
+
+% Please add the following required packages to your document preamble:
+\begin{table}[]
+\begin{tabular}{@{}llllllllll@{}}
+\toprule
+               & \textbf{BMI} & \textbf{DiabetesPedigreeFunction} & \textbf{Age} & \textbf{Outcome} & \textbf{} &  &  &  &  \\ \midrule
+\textbf{count} & 768          & 768                               & 768          & 768              &           &  &  &  &  \\
+\textbf{mean}  & 31.99258     & 0.471876                          & 33.24089     & 0.348958         &           &  &  &  &  \\
+\textbf{std}   & 7.88416      & 0.331329                          & 11.76023     & 0.476951         &           &  &  &  &  \\
+\textbf{min}   & 0            & 0.078                             & 21           & 0                &           &  &  &  &  \\
+\textbf{25\%}  & 27.3         & 0.24375                           & 24           & 0                &           &  &  &  &  \\
+\textbf{50\%}  & 32           & 0.3725                            & 29           & 0                &           &  &  &  &  \\
+\textbf{75\%}  & 36.6         & 0.62625                           & 41           & 1                &           &  &  &  &  \\
+\textbf{max}   & 67.1         & 2.42                              & 81           & 1                &           &  &  &  &  \\ \bottomrule
+\end{tabular}
+\end{table}
 
 \subsection{Wartości odstające}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1.2\textwidth]{images/outliers.png}
+	\caption{Wartości odstające}
+	\label{fig:outliers}
+\end{figure}
 
 \begin{itemize}
 \item Pregnancies
@@ -153,17 +211,17 @@ Z medycznego punktu widzenia cechy w badanym zbiorze nie mogą być równe zeru,
 	Brak wartości odstających.
 \item Glucose 
 
-	Według badań medycznych poziom cukru poniżej 140mg/dl jest wynikiem prawidłowym. Ponad 200mg/dl świadczy o wystąpieniu cukrzycy. (https://www.diabetes.co.uk/diabetescare/blood-sugar-level-ranges.html)
+	Według badań medycznych poziom cukru poniżej 140mg/dl jest wynikiem prawidłowym. Ponad 200mg/dl świadczy o wystąpieniu cukrzycy \cite{sugarLevel}.
 \item BloodPressure 
 
-	Rozkurczowe ciśnienie tętnicze uznawane jest za poprawne w granicach 60-80 mm/Hg. Poniżej tego progu zostaje stwierdzona chorba. Ciśnienie nie może być mniejsze niż 40. (http://www.bloodpressureuk.org/BloodPressureandyou/Thebasics/Bloodpressurechart)
+	Rozkurczowe ciśnienie tętnicze uznawane jest za poprawne w granicach 60-80 mm/Hg. Poniżej tego progu zostaje stwierdzona chorba. Ciśnienie nie może być mniejsze niż 40 \cite{pressure}.
 \item SkinThickness
 
 
 \item Insulin - poziom insuliny mierzony (mu U/ml)
 \item BMI 
 
-	Zakres BMI waha się pomiędzy 16 a 40. Gdzie 16 to wygłodzenie, a wartości powyżej 40 to 3 stopień otyłości. (https://pl.wikipedia.org/wiki/Wskaźnikmasyciała). Wiersz wykraczające poza ten zakres powinny zostać usunięte ze zbioru.
+	Zakres BMI waha się pomiędzy 16 a 40. Gdzie 16 to wygłodzenie, a wartości powyżej 40 to 3 stopień otyłości \cite{bmi}. Wiersz wykraczające poza ten zakres powinny zostać usunięte ze zbioru.
 	
 \item DiabetesPedigreeFunction - funkcja rodowodu cukrzycy,
 \item Age
@@ -179,5 +237,21 @@ Z medycznego punktu widzenia cechy w badanym zbiorze nie mogą być równe zeru,
 	Do klasyfikacji zostało użytych kilka różnych klasyfikatorów w celu porównania wyników.
 
 \subsection{SVN}
-\subsection{}
+\subsection{KNeighbors}
+\subsection{Decision tree}
+\subsection{Random forest}
+\subsection{Logistic regression}
+\subsection{Gaussian naive bayes}
+
+\begin{thebibliography}{9}
+
+\bibitem{sugarLevel}
+	https://www.diabetes.co.uk/diabetescare/blood-sugar-level-ranges.html
+\bibitem{pressure}
+	http://www.bloodpressureuk.org/BloodPressureandyou/Thebasics/Bloodpressurechart)
+
+\bibitem{bmi}
+	https://pl.wikipedia.org/wiki/Wskaźnikmasyciała
+\end{thebibliography}
+
 \end{document}
