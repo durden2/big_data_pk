@@ -56,7 +56,8 @@
 \usepackage{booktabs}
 \usepackage{makecell}
 \usepackage[flushleft]{threeparttable}
-
+\usepackage{graphicx}
+\usepackage{wrapfig}
 
 \newcommand{\HRule}[1]{\rule{\linewidth}{#1}} 	% Horizontal rule
 
@@ -102,9 +103,9 @@ Zbiór zawiera informacje czy u danego pacjenta występuje cukrzyca czy też nie
 \begin{itemize}
 \item Pregnancies - ilość ciąż,
 \item Glucose - koncentracja glukozy wg 2-godzinnego testu,
-\item BloodPressure - Ciśnienie krwi (mm Hg),
-\item SkinThickness - gubość fałdu skóry na tricepsie (mm),
-\item Insulin - 2-Hour serum insulin (mu U/ml)
+\item BloodPressure - rozkurczowe ciśnienie krwi (mm Hg),
+\item SkinThickness - grubość fałdu skóry na tricepsie (mm),
+\item Insulin - poziom insuliny mierzony (mu U/ml)
 \item BMI - index BMI (waga w kg/(wzrost w $m^2$)
 \item DiabetesPedigreeFunction - funkcja rodowodu cukrzycy,
 \item Age - wiek w latach,
@@ -118,9 +119,65 @@ Rozkład klas:
 \item 1 - 268 próbek
 \end{itemize}
 
+\begin{figure}
+	\centering
+	\includegraphics{images/outcome.png}
+	\caption{Outcome}
+	\label{fig:outcome}
+\end{figure}
+
 Całkowita liczba obserwacji wynosi 786.
 
+Źródło: https://www.kaggle.com/uciml/pima-indians-diabetes-database
+
+
+\pagebreak
 \section{Cel projektu}
 
 Celem projektu jest dokonanie klasyfikacji oraz zbadanie czy u danego pacjenta wystąpi cukrzyca czy nie. Zbadane zostanie także czy dane zawarte w~zbiorze są wystarczające do decyzji o prawdopodobieństwie wystąpienia choroby oraz czy wszystkie z nich wpływają znacząco na wystąpienie choroby.
+W projekcie porównane zostaną wyniki skuteczności różnych klasyfikatorów.
+
+\section{Analiza zbioru}
+
+Zanim przystąpimy do próby klasyfikacji dane muszą zostać odpowiednio przygotowane. Sprawdzone zostają wiersze w których qystępują zera oraz wartości odstające.
+
+\subsection{Wartości zerowe}
+
+Z medycznego punktu widzenia cechy w badanym zbiorze nie mogą być równe zeru, świadczy to więc o braku poprawnych danych. Wartości zerowe we wszystkich kolumnach zostają zastąpione przez średnią wartość w każdej z nich. 
+
+\subsection{Wartości odstające}
+
+\begin{itemize}
+\item Pregnancies
+
+	Brak wartości odstających.
+\item Glucose 
+
+	Według badań medycznych poziom cukru poniżej 140mg/dl jest wynikiem prawidłowym. Ponad 200mg/dl świadczy o wystąpieniu cukrzycy. (https://www.diabetes.co.uk/diabetescare/blood-sugar-level-ranges.html)
+\item BloodPressure 
+
+	Rozkurczowe ciśnienie tętnicze uznawane jest za poprawne w granicach 60-80 mm/Hg. Poniżej tego progu zostaje stwierdzona chorba. Ciśnienie nie może być mniejsze niż 40. (http://www.bloodpressureuk.org/BloodPressureandyou/Thebasics/Bloodpressurechart)
+\item SkinThickness
+
+
+\item Insulin - poziom insuliny mierzony (mu U/ml)
+\item BMI 
+
+	Zakres BMI waha się pomiędzy 16 a 40. Gdzie 16 to wygłodzenie, a wartości powyżej 40 to 3 stopień otyłości. (https://pl.wikipedia.org/wiki/Wskaźnikmasyciała). Wiersz wykraczające poza ten zakres powinny zostać usunięte ze zbioru.
+	
+\item DiabetesPedigreeFunction - funkcja rodowodu cukrzycy,
+\item Age
+	
+	Brak wartości odstających.
+
+\end{itemize}
+\subsection{Selekcja cech}
+	Z modelu zostały usunięte cechy które nie zostały uznane za istotne. Kolumny które pozostaną w modelu zostały wybrane z użyciem ExtraTreesClassifier. Cechy z najniższym wynikiem zostają odrzucone.  
+\subsection{Normalizacja}
+	Dane zostały znormalizowane. Wszystkie wartości są teraz z zakresu 0-1. Do normalizacji użyto MinMaxScaler i StandardScaler.
+\section{Klasyfikacja}
+	Do klasyfikacji zostało użytych kilka różnych klasyfikatorów w celu porównania wyników.
+
+\subsection{SVN}
+\subsection{}
 \end{document}
