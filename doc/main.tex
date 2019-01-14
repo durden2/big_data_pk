@@ -142,6 +142,10 @@ Całkowita liczba obserwacji wynosi 786.
 Celem projektu jest dokonanie klasyfikacji oraz zbadanie czy u danego pacjenta wystąpi cukrzyca czy nie. Zbadane zostanie także czy dane zawarte w~zbiorze są wystarczające do decyzji o prawdopodobieństwie wystąpienia choroby oraz czy wszystkie z nich wpływają znacząco na wystąpienie choroby.
 W projekcie porównane zostaną wyniki skuteczności różnych klasyfikatorów.
 
+\section{Narzędzia}
+	W tym projekcie posłużono się językiem Python oraz bibliotekom poświęconym analizie danych i uczeniu maszynowym, takimi jak: NumPy, Pandas, SciKit-learn. Do wytworzenia wykresów zastosowano biblioteki Matplotlib oraz Seaborn.
+
+
 \section{Analiza zbioru}
 
 Zanim przystąpimy do próby klasyfikacji dane muszą zostać odpowiednio przygotowane. Sprawdzone zostają wiersze w których występują zera oraz wartości odstające.
@@ -233,15 +237,28 @@ Z tabel wynika, że istnieją wartości zerowe w kolumnach \textit{Pregnancies, 
 	Z modelu zostały usunięte cechy które nie zostały uznane za istotne. Kolumny które pozostaną w modelu zostały wybrane z użyciem ExtraTreesClassifier. Cechy z najniższym wynikiem zostają odrzucone.  
 \subsection{Normalizacja}
 	Dane zostały znormalizowane. Wszystkie wartości są teraz z zakresu 0-1. Do normalizacji użyto MinMaxScaler i StandardScaler.
-\section{Klasyfikacja}
-	Do klasyfikacji zostało użytych kilka różnych klasyfikatorów w celu porównania wyników.
 
-\subsection{SVN}
-\subsection{KNeighbors}
-\subsection{Decision tree}
-\subsection{Random forest}
-\subsection{Logistic regression}
-\subsection{Gaussian naive bayes}
+\section{Walidacja krzyżowa}
+	Przed przystąpieniem do klasyfikacji zastosowano prosty podział zbioru danych na dane treningowe oraz testowe oraz 5-krotną walidację krzyżową. Zdecydowano się na podział zbioru w następującej proporcji: 70\% - dane treningowe, 30\% - dane testowe. Podział ten zastosowano do wyboru najlepszych parametrów modeli klasyfikacji. 
+	Walidację krzyżową stosuje się w celu minimalizacji problemu nadmiernego dopasowania (\textit{overfitting}). Dzięki niej można uzyskać informacje takie jak dokładność modelu (accuracy) czy macierz pomyłek, które umożliwiają ocenę jakości modelu.
+	
+\section{Klasyfikacja}
+	Do klasyfikacji zostało użytych sześć różnych klasyfikatorów w celu porównania wyników.
+
+Tu można dodać coś o wybranych parametrach i dlaczego takie....
+
+\begin{itemize}
+\item{Maszyna wektorów nośnych (SVN)}
+\item{K najbliżych sąsiadów (KNN)}
+\item{Drzewo decyzyjne}
+\item{Las losowy}
+\item{Regresja logistyczna}
+\item{Naiwny klasyfikator bayesowski}
+
+\end{itemize}
+
+\section{Wyniki}
+
 
 \begin{thebibliography}{9}
 
@@ -253,5 +270,6 @@ Z tabel wynika, że istnieją wartości zerowe w kolumnach \textit{Pregnancies, 
 \bibitem{bmi}
 	https://pl.wikipedia.org/wiki/Wskaźnikmasyciała
 \end{thebibliography}
+
 
 \end{document}
