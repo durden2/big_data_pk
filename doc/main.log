@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.17)  13 JAN 2019 23:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.17)  14 JAN 2019 20:47
 entering extended mode
 **./main.tex
 (main.tex
@@ -241,6 +241,27 @@ Package: amsthm 2017/10/31 v2.20.4
 \thm@headsep=\skip52
 \dth@everypar=\toks27
 )
+("C:\Users\Emilia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\booktabs\booktabs
+.sty"
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen126
+\lightrulewidth=\dimen127
+\cmidrulewidth=\dimen128
+\belowrulesep=\dimen129
+\belowbottomsep=\dimen130
+\aboverulesep=\dimen131
+\abovetopsep=\dimen132
+\cmidrulesep=\dimen133
+\cmidrulekern=\dimen134
+\defaultaddspace=\dimen135
+\@cmidla=\count106
+\@cmidlb=\count107
+\@aboverulesep=\dimen136
+\@belowrulesep=\dimen137
+\@thisruleclass=\count108
+\@lastruleclass=\count109
+\@thisrulewidth=\dimen138
+)
 ("C:\Users\Emilia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquotes
 .sty"
 Package: csquotes 2018/04/13 v5.2d context-sensitive quotations (JAW)
@@ -248,14 +269,14 @@ Package: csquotes 2018/04/13 v5.2d context-sensitive quotations (JAW)
 ("C:\Users\Emilia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox
 .sty"
 Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count106
+\etb@tempcnta=\count110
 )
-\csq@reset=\count107
-\csq@gtype=\count108
-\csq@glevel=\count109
-\csq@qlevel=\count110
-\csq@maxlvl=\count111
-\csq@tshold=\count112
+\csq@reset=\count111
+\csq@gtype=\count112
+\csq@glevel=\count113
+\csq@qlevel=\count114
+\csq@maxlvl=\count115
+\csq@tshold=\count116
 \csq@ltx@everypar=\toks28
 
 ("C:\Users\Emilia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquotes
@@ -277,24 +298,24 @@ Package: courier 2005/04/12 PSNFSS-v9.2a (WaS)
 )
 ("C:\Users\Emilia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings
 .sty"
-\lst@mode=\count113
+\lst@mode=\count117
 \lst@gtempboxa=\box28
 \lst@token=\toks29
-\lst@length=\count114
-\lst@currlwidth=\dimen126
-\lst@column=\count115
-\lst@pos=\count116
-\lst@lostspace=\dimen127
-\lst@width=\dimen128
-\lst@newlines=\count117
-\lst@lineno=\count118
-\lst@maxwidth=\dimen129
+\lst@length=\count118
+\lst@currlwidth=\dimen139
+\lst@column=\count119
+\lst@pos=\count120
+\lst@lostspace=\dimen140
+\lst@width=\dimen141
+\lst@newlines=\count121
+\lst@lineno=\count122
+\lst@maxwidth=\dimen142
 
 ("C:\Users\Emilia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.
 sty"
 File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
-\c@lstnumber=\count119
-\lst@skipnumbers=\count120
+\c@lstnumber=\count123
+\lst@skipnumbers=\count124
 \lst@framebox=\box29
 )
 ("C:\Users\Emilia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings
@@ -317,9 +338,9 @@ File: lstlang3.sty 2018/09/02 1.7 listings language file
 )
 ("C:\Users\Emilia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.sty"
 Package: array 2018/04/30 v2.4h Tabular extension package (FMi)
-\col@sep=\dimen130
+\col@sep=\dimen143
 \ar@mcellbox=\box30
-\extrarowheight=\dimen131
+\extrarowheight=\dimen144
 \NC@list=\toks30
 \extratabsurround=\skip53
 \backup@length=\skip54
@@ -328,42 +349,21 @@ Package: array 2018/04/30 v2.4h Tabular extension package (FMi)
 ("C:\Users\Emilia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\tabularx.st
 y"
 Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
-\TX@col@width=\dimen132
-\TX@old@table=\dimen133
-\TX@old@col=\dimen134
-\TX@target=\dimen135
-\TX@delta=\dimen136
-\TX@cols=\count121
+\TX@col@width=\dimen145
+\TX@old@table=\dimen146
+\TX@old@col=\dimen147
+\TX@target=\dimen148
+\TX@delta=\dimen149
+\TX@cols=\count125
 \TX@ftn=\toks31
 )
 ("C:\Users\Emilia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\multirow\multirow
 .sty"
 Package: multirow 2018/08/03 v2.3 Span multiple rows of a table
 \multirow@colwidth=\skip55
-\multirow@cntb=\count122
+\multirow@cntb=\count126
 \multirow@dima=\skip56
-\bigstrutjot=\dimen137
-)
-("C:\Users\Emilia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\booktabs\booktabs
-.sty"
-Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen138
-\lightrulewidth=\dimen139
-\cmidrulewidth=\dimen140
-\belowrulesep=\dimen141
-\belowbottomsep=\dimen142
-\aboverulesep=\dimen143
-\abovetopsep=\dimen144
-\cmidrulesep=\dimen145
-\cmidrulekern=\dimen146
-\defaultaddspace=\dimen147
-\@cmidla=\count123
-\@cmidlb=\count124
-\@aboverulesep=\dimen148
-\@belowrulesep=\dimen149
-\@thisruleclass=\count125
-\@lastruleclass=\count126
-\@thisrulewidth=\dimen150
+\bigstrutjot=\dimen150
 )
 ("C:\Users\Emilia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\makecell\makecell
 .sty"
@@ -418,20 +418,20 @@ Package csquotes Info: Redefining alias 'default' -> 'polish'.
  (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
 \c@lstlisting=\count129
 
 ("C:\Users\Emilia\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.m
@@ -511,107 +511,158 @@ Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
-)
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 104.
+) [1
 
-
-("C:\Users\Emilia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 104.
-LaTeX Font Info:    Try loading font information for OML+plm on input line 109.
-
+{C:/Users/Emilia/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+(main.toc
+LaTeX Font Info:    Try loading font information for OML+plm on input line 6.
 
 ("C:\Users\Emilia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\polski\omlplm.fd"
 File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Try loading font information for OMS+plsy on input line 109
-.
+LaTeX Font Info:    Try loading font information for OMS+plsy on input line 6.
 
 ("C:\Users\Emilia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\polski\omsplsy.fd
 "
 File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Try loading font information for OMX+plex on input line 109
-.
+LaTeX Font Info:    Try loading font information for OMX+plex on input line 6.
 
 ("C:\Users\Emilia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\polski\omxplex.fd
 "
 File: omxplex.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <12> on input line 109.
+(Font)              <12> on input line 6.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <8> on input line 109.
+(Font)              <8> on input line 6.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <6> on input line 109.
-LaTeX Font Info:    Try loading font information for U+msa on input line 109.
+(Font)              <6> on input line 6.
+LaTeX Font Info:    Try loading font information for U+msa on input line 6.
 
 ("C:\Users\Emilia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 109.
+LaTeX Font Info:    Try loading font information for U+msb on input line 6.
  ("C:\Users\Emilia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
 "
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+))
+\tf@toc=\write3
+\openout3 = `main.toc'.
 
-{C:/Users/Emilia/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<images/outcome.png, id=8, 321.70187pt x 206.27063pt>
+ [2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 109.
+
+
+("C:\Users\Emilia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 109.
+<images/outcome.png, id=11, 321.70187pt x 206.27063pt>
 File: images/outcome.png Graphic file (type png)
 <use images/outcome.png>
-Package pdftex.def Info: images/outcome.png  used on input line 124.
+Package pdftex.def Info: images/outcome.png  used on input line 129.
 (pdftex.def)             Requested size: 321.70108pt x 206.27011pt.
 
-[2] [3 <./images/outcome.png>]
-Overfull \hbox (16.67633pt too wide) in paragraph at lines 160--161
-\OT4/cmr/m/n/12 (https://www.diabetes.co.uk/diabetescare/blood-sugar-level-rang
-es.html) 
+[3] [4 <./images/outcome.png>]
+<images/hist_median.png, id=23, 1433.355pt x 710.655pt>
+File: images/hist_median.png Graphic file (type png)
+<use images/hist_median.png>
+Package pdftex.def Info: images/hist_median.png  used on input line 157.
+(pdftex.def)             Requested size: 467.99881pt x 232.03366pt.
+
+Overfull \hbox (77.99881pt too wide) in paragraph at lines 157--158
+ [][] 
+ []
+
+<images/hist_average.png, id=24, 1433.355pt x 710.655pt>
+File: images/hist_average.png Graphic file (type png)
+<use images/hist_average.png>
+Package pdftex.def Info: images/hist_average.png  used on input line 164.
+(pdftex.def)             Requested size: 467.99881pt x 232.03366pt.
+
+Overfull \hbox (77.99881pt too wide) in paragraph at lines 164--165
+ [][] 
  []
 
 
-Overfull \hbox (242.95317pt too wide) in paragraph at lines 163--164
-\OT4/cmr/m/n/12 nie mo»e by¢ mniej-sze ni» 40. (http://www.bloodpressureuk.org/
-BloodPressureandyou/Thebasics/Bloodpressurechart) 
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 172.
+
+
+Overfull \hbox (80.94273pt too wide) in paragraph at lines 173--185
+[][] 
  []
 
 
-Overfull \hbox (98.07271pt too wide) in paragraph at lines 170--171
-\OT4/cmr/m/n/12 to-±ci po-wy-»ej 40 to 3 sto-pie« oty-ªo-±ci. (https://pl.wikip
-edia.org/wiki/Wska¹nikmasyciaªa).
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 188.
+
+
+Overfull \hbox (46.33109pt too wide) in paragraph at lines 189--201
+[][] 
+ []
+
+<images/outliers.png, id=25, 1351.0475pt x 661.47125pt>
+File: images/outliers.png Graphic file (type png)
+<use images/outliers.png>
+Package pdftex.def Info: images/outliers.png  used on input line 207.
+(pdftex.def)             Requested size: 467.99881pt x 229.12631pt.
+
+Overfull \hbox (77.99881pt too wide) in paragraph at lines 207--208
+ [][] 
  []
 
 
-Overfull \hbox (0.614pt too wide) in paragraph at lines 170--171
-\OT4/cmr/m/n/12 Wiersz wy-kra-cza-j¡ce poza ten za-kres po-winny zo-sta¢ usu-ni
-¦te ze zbioru. 
+LaTeX Warning: Citation `sugarLevel' on page 5 undefined on input line 218.
+
+[5 <./images/hist_median.png>] [6 <./images/hist_average.png>] [7 <./images/out
+liers.png>]
+
+LaTeX Warning: Citation `pressure' on page 8 undefined on input line 221.
+
+
+LaTeX Warning: Citation `bmi' on page 8 undefined on input line 228.
+
+[8]
+Overfull \hbox (79.36876pt too wide) in paragraph at lines 268--269
+[]\OT4/cmr/m/n/12 http://www.bloodpressureuk.org/BloodPressureandyou/Thebasics/
+Bloodpressurechart) 
  []
 
-[4] [5] [6] (main.aux) ) 
+[9] (main.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 6282 strings out of 492973
- 92147 string characters out of 3126249
- 349651 words of memory out of 3000000
- 10001 multiletter control sequences out of 15000+200000
- 13167 words of font info for 40 fonts, out of 3000000 for 9000
+ 6306 strings out of 492973
+ 92635 string characters out of 3126249
+ 357390 words of memory out of 3000000
+ 10019 multiletter control sequences out of 15000+200000
+ 13671 words of font info for 41 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,5n,32p,831b,221s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Emilia/AppData/Local/Programs/MiKTeX 2.9/font
-s/enc/dvips/pl/plit.enc}{C:/Users/Emilia/AppData/Local/Programs/MiKTeX 2.9/font
-s/enc/dvips/pl/plrm.enc}{C:/Users/Emilia/AppData/Local/Programs/MiKTeX 2.9/font
-s/enc/dvips/pl/plmi.enc}{C:/Users/Emilia/AppData/Local/Programs/MiKTeX 2.9/font
-s/enc/dvips/pl/plsc.enc}<C:/Users/Emilia/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Emilia/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/public/pl/plbx12.pfb><C:/Users/Emilia/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/pl/plcsc10.pfb><C:/Users/Emilia/AppData/Local
-/Programs/MiKTeX 2.9/fonts/type1/public/pl/plmi12.pfb><C:/Users/Emilia/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plr12.pfb><C:/Users/Emilia/AppD
-ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plr8.pfb><C:/Users/Emilia/A
-ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plti12.pfb>
-Output written on main.pdf (6 pages, 74222 bytes).
+ 41i,7n,32p,831b,240s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Emilia/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/pl/plit.en
+c}{C:/Users/Emilia/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/pl/plrm.en
+c}{C:/Users/Emilia/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/pl/plmi.en
+c}{C:/Users/Emilia/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/pl/plsc.en
+c}<C:/Users/Emilia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb><C:/Users/Emilia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/pl/plbx12.pfb><C:/Users/Emilia/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/pl/plcsc10.pfb><C:/Users/Emilia/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/pl/plmi12.pfb><C:/Users/Emilia/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/pl/plr12.pfb><C:/Users/Emilia/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/pl/plr8.pfb><C:/Users/Emilia/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/pl/plti12.pfb>
+Output written on main.pdf (9 pages, 196483 bytes).
 PDF statistics:
- 56 PDF objects out of 1000 (max. 8388607)
+ 73 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
