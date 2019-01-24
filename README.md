@@ -1,26 +1,23 @@
-# big_data_pk
 
-## ToDo:
-  * usunięcie obserwacji odstających
-  * porównanie klasyfikatorów
-  * opisać dokładnie po co się coś robi i podać referencje
-  * 
+## Topic:
+  Predicting diabetes based on "UCI PIMA Indian Diabetes" dataset using machine learning methods and algthms.
   
-## Done:
-  * zastąpienie brakujących wartości średnią (opisać, referencje)
-  
-## TO DO FINALLY
+## Content:
+### Data preprocessing:
+* handling missing values
+* handling outliners
+* normalization and standardization
+      
+### Classification preparation:
+* Grid Search on features
+* Cross-validation
 
- ### Preprocessing:
- * Zastąpienie wartości 0 medianą + średnią (Michal)
- * Wrzucamy ładne histogramy (Emilka)
- * Wrzucamy box ploty + komentarz dlaczego nie odrzucamy wartości odstających (Michal)
  
- ### Klasyfikacja
- * Przepuszczamy dane na wszystkich klasyfikatorach z grid searchem
- * zbieramy najlepsze wyniki,
- * Porównanie wyników (macierze pomyłek + wyniki celności) dla najlepszych parametrów z grid search
- * komentarz jak wygląda klasyfikacja przy odrzuceniu wartości odstających oraz przy wyrzuceniu wartości, gdzie występują 0 i dleczego tego nie robimy
- 
- 
- * Wyslac dziewczyną notebooki  helionu 
+### Classification:
+ * SVM
+ * Knn
+ * Decision Trees
+ * Random Forest
+ * Logistic regression
+ * Naive Bayesian classifier
+ * Ada Boost
