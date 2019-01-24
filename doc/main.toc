@@ -1,12 +1,12 @@
 \babel@toc {polish}{}
 \contentsline {section}{\numberline {1}Opis zbioru danych}{3}
-\contentsline {section}{\numberline {2}Cel projektu}{4}
-\contentsline {section}{\numberline {3}Narz\IeC {\k e}dzia}{4}
-\contentsline {section}{\numberline {4}Analiza zbioru}{4}
-\contentsline {subsection}{\numberline {4.1}Warto\IeC {\'s}ci zerowe}{5}
-\contentsline {subsection}{\numberline {4.2}Warto\IeC {\'s}ci odstaj\IeC {\k a}ce}{5}
-\contentsline {subsection}{\numberline {4.3}Selekcja cech}{8}
-\contentsline {subsection}{\numberline {4.4}Normalizacja}{8}
-\contentsline {section}{\numberline {5}Walidacja krzy\IeC {\.z}owa}{8}
-\contentsline {section}{\numberline {6}Klasyfikacja}{9}
-\contentsline {section}{\numberline {7}Wyniki}{9}
+\contentsline {section}{\numberline {2}Cel projektu}{5}
+\contentsline {section}{\numberline {3}Narz\IeC {\k e}dzia}{5}
+\contentsline {section}{\numberline {4}Analiza zbioru}{5}
+\contentsline {subsection}{\numberline {4.1}Warto\IeC {\'s}ci zerowe}{6}
+\contentsline {subsection}{\numberline {4.2}Warto\IeC {\'s}ci odstaj\IeC {\k a}ce}{6}
+\contentsline {subsection}{\numberline {4.3}Selekcja cech}{6}
+\contentsline {subsection}{\numberline {4.4}Normalizacja}{10}
+\contentsline {section}{\numberline {5}Walidacja krzy\IeC {\.z}owa}{10}
+\contentsline {section}{\numberline {6}Wyniki}{10}
+\contentsline {section}{\numberline {7}Wnioski}{15}
